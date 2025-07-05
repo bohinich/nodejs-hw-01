@@ -1,8 +1,8 @@
+import { readContacts } from '../utils/readContacts.js';
+
 export const getAllContacts = async () => {
-    const contacts = await readContacts();
+  const contacts = await readContacts();
   console.log(contacts);
 };
 
-console.log(await getAllContacts());
-
-const { readContacts } = require('../utils/readContacts');
+await getAllContacts();
