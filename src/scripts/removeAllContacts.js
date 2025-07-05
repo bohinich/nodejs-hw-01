@@ -1,11 +1,6 @@
-export const removeAllContacts = async () => {};
+export const removeAllContacts = async () => { await writeContacts([]); };
 
 removeAllContacts();
 
 const { writeContacts } = require('../utils/writeContacts');
 
-async function removeAllContacts() {
-  await writeContacts([]);
-}
-
-removeAllContacts();
