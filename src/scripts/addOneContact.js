@@ -8,4 +8,4 @@ export const addOneContact = async () => {
   await writeContacts(contacts);
 };
 
-addOneContact();
+await addOneContact();

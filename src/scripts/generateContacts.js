@@ -10,4 +10,4 @@ export const generateContacts = async (count = 5) => {
   await writeContacts(contacts);
 };
 
-generateContacts(5);
+await generateContacts(5);
